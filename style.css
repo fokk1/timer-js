@@ -1,0 +1,64 @@
+/*style.css*/
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	background-color: #fd746c;
+	height: 100vh;
+	display: flex;
+}
+
+.timer {
+	position: relative;
+	display: inline-block;
+	margin: auto;
+}
+
+.timer input {
+	display: block;
+	border: none;
+	width: 240px;
+	font-size: 75px;
+	text-align: center;
+	background-color: transparent;
+}
+
+.timer button {
+	border: none;
+	background-color: transparent;
+	font-size: 36px;
+	cursor: pointer;
+
+	transition: color .2s;
+}
+
+.timer button:hover {
+	color: white;
+}
+
+.timer button:focus {
+	outline: none;
+}
+
+.timer input:focus {
+	outline: none;
+}
+
+.controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
